@@ -1,29 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "extends": [
-    "workarounds:all",
-    ":ignoreUnstable",
-    ":ignoreModulesAndTests",
-    ":prImmediately",
-    ":prConcurrentLimitNone",
-    ":prHourlyLimitNone",
-    ":automergeDisabled",
-    ":updateNotScheduled"
+  "extends": [
+    "config:base"
   ],
-  "dependencyDashboard": true,
-  "labels": [
-    "dependencies"
-  ],
-  "kubernetes": {
-    "fileMatch": [
-      "^bases(.*\/).+\\.yaml$",
-      "^kustomizations/bases(.*\/).+\\.yaml$"
-    ]
-  },
-  "kustomize": {
-    "fileMatch": [
-      "^bases(.*\/)kustomization\\.yaml$",
-      "^kustomizations/bases(.*\/)kustomization\\.yaml$"
-    ]
-  }
+  "dependencyDashboard": true
 }
