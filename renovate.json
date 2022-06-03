@@ -4,8 +4,7 @@
   ],
   "kustomize": {
     "enabled": true,
-    "fileMatch": ["(^|/)kustomization.yaml$"],
-    "dataSource": "git-tags"
+    "fileMatch": ["(^|/)kustomization.yaml$"]
   },
   "dependencyDashboard": true
 }
