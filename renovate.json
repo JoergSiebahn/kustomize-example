@@ -2,5 +2,10 @@
   "extends": [
     "config:base"
   ],
+  "kustomize": {
+    "enabled": true,
+    "fileMatch": ["(^|/)kustomization.yaml$"],
+    "dataSource": "git-tags"
+  },
   "dependencyDashboard": true
 }
