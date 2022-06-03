@@ -14,11 +14,6 @@
   "labels": [
     "dependencies"
   ],
-  "timezone": "Europe/Berlin",
-  "schedule": [
-    "after 8am every weekday",
-    "before 10pm every weekday"
-  ],
   "kubernetes": {
     "fileMatch": [
       "^bases(.*\/).+\\.yaml$",
