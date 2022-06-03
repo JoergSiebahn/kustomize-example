@@ -1,5 +1,19 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:base"
-  ]
+  ],
+  "kubernetes": {
+    "fileMatch": [
+      "^bases(.*\/).+\\.yaml$",
+      "^kustomizations/bases(.*\/).+\\.yaml$"
+    ]
+  },
+  "kustomize": {
+    "fileMatch": [
+      "^bases(.*\/)kustomization\\.yaml$",
+      "^kustomizations/bases(.*\/)kustomization\\.yaml$"
+    ]
+  }
+
 }
