@@ -2,9 +2,5 @@
   "extends": [
     "config:base"
   ],
-  "kustomize": {
-    "enabled": true,
-    "fileMatch": ["(^|/)kustomization.yaml$"]
-  },
   "dependencyDashboard": true
 }
