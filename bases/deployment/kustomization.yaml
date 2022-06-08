@@ -1,8 +1,8 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
-namespace: test
-
 resources:
-  - ../my-service
-  - ../my-other-service
+  - deployment.yaml
+
+configurations:
+  - configuration/name-references.yaml
