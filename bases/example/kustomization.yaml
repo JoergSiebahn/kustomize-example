@@ -4,4 +4,4 @@ kind: Kustomization
 namespace: test
 
 resources:
-  - https://github.com/JoergSiebahn/dirty-tagging//bases/test/?ref=0.5.0
+  - https://github.com/JoergSiebahn/dirty-tagging//bases/test/?ref=0.6.0-kustomize
